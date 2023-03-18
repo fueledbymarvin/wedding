@@ -1,0 +1,11 @@
+---
+const { title, time, description } = Astro.props;
+---
+
+<div class="flex items-baseline">
+	<div class="flex-[2] space-y-2">
+		<h3 class="font-serif text-2xl">{title}</h3>
+		<h4 class="text-gray-400">{time}</h4>
+	</div>
+	<div class="flex-[3]">{description}</div>
+</div>

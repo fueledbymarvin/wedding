@@ -1,25 +1,22 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { SITE_TITLE } from '../consts';
 ---
 
-<header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
+<header class="flex space-x-4 justify-between sm:items-center flex-col sm:flex-row">
+	<div class="flex items-center sm:space-x-4">
+		<img src="/public/logo.png" class="w-32" />
+		<h2 class="text-4xl font-serif leading-snug font-bold tracking-wide">
+			Cassie
+			<br>
+			&
+			<br>
+			Marvin
+		</h2>
+	</div>
+	<nav class="flex flex-col sm:items-end space-y-1">
+		<HeaderLink href="/">Schedule</HeaderLink>
+		<HeaderLink href="/ceremony">Ceremony</HeaderLink>
+		<HeaderLink href="/reception">Reception</HeaderLink>
+		<HeaderLink href="/map">Map</HeaderLink>
 	</nav>
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>
