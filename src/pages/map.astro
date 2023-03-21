@@ -1,10 +1,22 @@
 ---
+import Section from '../components/Section.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-	title="Schedule"
-	description="Schedule of events"
+	title="Map"
+	description="Map of the garden"
 >
-	<p>hi</p>
+	<div class="space-y-6">
+		<Section title="Garden Map">
+			<a href="https://www.hakone.com/_files/ugd/831588_2e1365aad4e74e2788759e4b791776f8.pdf">
+				<img src="/wedding/map.webp" class="rounded-lg" />
+			</a>
+		</Section>
+		<Section title="Event Map">
+			<a href="/wedding/map.png">
+				<img src="/wedding/map.png" class="rounded-lg" />
+			</a>
+		</Section>
+	</div>
 </Layout>

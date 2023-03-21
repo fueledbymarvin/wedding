@@ -1,10 +1,70 @@
 ---
+import Section from '../components/Section.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-	title="Schedule"
-	description="Schedule of events"
+	title="Ceremony"
+	description="Details about the ceremony"
 >
-	<p>hi</p>
+	<div class="space-y-6">
+		<Section title="Sequence of Events">
+			<ul>
+				<li>Prelude</li>
+				<li>Processional</li>
+				<li>Wedding Message</li>
+				<li>Readings</li>
+				<li>Exchange of Vows</li>
+				<li>Exchange of Rings</li>
+				<li>Pronouncement</li>
+				<li>Recessional</li>
+			</ul>
+		</Section>
+		<Section title="Wedding Party">
+			<div class="grid grid-cols-2 gap-x-6 gap-y-4">
+				<ul class="text-right">
+					<li class="font-bold uppercase mb-1 tracking-wider text-sm">Parents of the Bride</li>
+					<li>Yun Luo</li>
+					<li>Jun Xu</li>
+				</ul>
+				<ul class="text-left">
+					<li class="font-bold uppercase mb-1 tracking-wider text-sm">Parents of the Groom</li>
+					<li>Mei Rong</li>
+					<li>Feng Qian</li>
+				</ul>
+				<ul class="text-right">
+					<li class="font-bold uppercase mb-1 tracking-wider text-sm">Maids of Honor</li>
+					<li>Siqi You</li>
+					<li>Joanna Zhang</li>
+				</ul>
+				<ul class="text-left">
+					<li class="font-bold uppercase mb-1 tracking-wider text-sm">Best Man</li>
+					<li>Aki Gao</li>
+				</ul>
+				<ul class="text-right">
+					<li class="font-bold uppercase mb-1 tracking-wider text-sm">Bridesmaids</li>
+					<li>Wei Du</li>
+					<li>Jieun Park</li>
+					<li>Trisha Sanghavi</li>
+					<li>Xi Yang</li>
+				</ul>
+				<ul class="text-left">
+					<li class="font-bold uppercase mb-1 tracking-wider text-sm">Groomspeople</li>
+					<li>David Chi</li>
+					<li>Charles Jin</li>
+					<li>Kevin Tong</li>
+					<li>Stephen Yuan</li>
+					<li>Sihua Xu</li>
+				</ul>
+				<ul class="text-right">
+					<li class="font-bold uppercase mb-1 tracking-wider text-sm">Ring Bearers</li>
+					<li>Coffee & Haku</li>
+				</ul>
+				<ul class="text-left">
+					<li class="font-bold uppercase mb-1 tracking-wider text-sm">Officiant</li>
+					<li>Andy Zhang</li>
+				</ul>
+			</div>
+		</Section>
+	</div>
 </Layout>

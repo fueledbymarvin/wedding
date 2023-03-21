@@ -3,18 +3,18 @@ import HeaderLink from './HeaderLink.astro';
 ---
 
 <header class="flex space-x-4 justify-between sm:items-center flex-col sm:flex-row">
-	<div class="flex items-center sm:space-x-4">
+	<div class="flex items-center space-x-4">
 		<img src="/wedding/logo.png" class="w-32" />
-		<h2 class="text-4xl font-serif leading-snug font-bold tracking-wide">
+		<div class="text-4xl font-serif leading-snug font-bold tracking-wide">
 			Cassie
 			<br>
 			&
 			<br>
 			Marvin
-		</h2>
+		</div>
 	</div>
 	<nav class="flex flex-col sm:items-end space-y-1">
-		<HeaderLink href="/wedding">Schedule</HeaderLink>
+		<HeaderLink href="/wedding/">Schedule</HeaderLink>
 		<HeaderLink href="/wedding/ceremony">Ceremony</HeaderLink>
 		<HeaderLink href="/wedding/reception">Reception</HeaderLink>
 		<HeaderLink href="/wedding/map">Map</HeaderLink>

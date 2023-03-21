@@ -1,10 +1,179 @@
 ---
+import Section from '../components/Section.astro';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout
-	title="Schedule"
-	description="Schedule of events"
+	title="Reception"
+	description="Details about the reception"
 >
-	<p>hi</p>
+	<div class="space-y-6">
+		<Section title="Drinks">
+			<div class="space-y-4">
+				<ul>
+					<li class="font-bold uppercase mb-2 tracking-wider text-sm">Sake</li>
+					<li class="mb-1">Eiko Fuji “10,000 Ways”</li>
+					<li class="text-sm text-stone-400">Light & sweet. Notes of orange, clove, and toasted malt.</li>
+				</ul>
+				<ul>
+					<li class="font-bold uppercase mb-2 tracking-wider text-sm">Wine</li>
+					<li class="mb-1">Stephen’s Pick</li>
+					<li class="text-sm text-stone-400 mb-3">Cabernet sauvignon. Notes of something.</li>
+					<li class="mb-1">Tiffany’s Pick</li>
+					<li class="text-sm text-stone-400">Reisling. Notes of something.</li>
+				</ul>
+				<ul>
+					<li class="font-bold uppercase mb-2 tracking-wider text-sm">Beer</li>
+					<li>Kirin Ichiban</li>
+					<li>Sapporo</li>
+					<li>Asahi</li>
+				</ul>
+				<ul>
+					<li class="font-bold uppercase mb-2 tracking-wider text-sm">Soju</li>
+					<li class="mb-1">Chum Churum</li>
+					<li class="text-sm text-stone-400">Apple / Peach / Citron / Strawberry</li>
+				</ul>
+			</div>
+		</Section>
+		<Section title="Hors D’oeuvres">
+			<div class="space-y-4">
+				<ul>
+					<li class="mb-1">Spring Salad Wrap</li>
+					<li class="text-sm text-stone-400">Vegan. Mango and avocado.</li>
+				</ul>
+				<ul>
+					<li class="mb-1">Chicken Satay</li>
+					<li class="text-sm text-stone-400">Peanut sauce.</li>
+				</ul>
+				<ul>
+					<li class="mb-1">Yuzu Ceviche</li>
+					<li class="text-sm text-stone-400">Shrimp, white fish, onion, yuzu, and ginger juice.</li>
+				</ul>
+			</div>
+		</Section>
+		<Section title="Lunch">
+			<div class="space-y-4">
+				<ul>
+					<li class="mb-1">Miso Salad</li>
+					<li class="text-sm text-stone-400">Miso-carrot dressing, mandarin orange, tomato, and parmesan.</li>
+				</ul>
+				<ul>
+					<li class="mb-1">Baked Salmon</li>
+					<li class="text-sm text-stone-400">Yuzu beurre blanc.</li>
+				</ul>
+				<ul>
+					<li class="mb-1">Kalbi</li>
+					<li class="text-sm text-stone-400">Korean bbq beef short rib.</li>
+				</ul>
+				<ul>
+					<li class="mb-1">Garlic Eggplant Tofu</li>
+					<li class="text-sm text-stone-400">Vegan. Spicy hoisin.</li>
+				</ul>
+				<ul>
+					<li class="mb-1">Green Curry</li>
+					<li class="text-sm text-stone-400">Vegan. Eggplant, bell peppers,
+						bamboo shoots, kaffir leaves, and Thai basil.</li>
+				</ul>
+				<ul>
+					<li class="mb-1">Roasted Vegetables</li>
+					<li class="text-sm text-stone-400">Vegan. Mini potatoes,
+						brussels sprouts, asparagus, and carrot.</li>
+				</ul>
+				<ul>
+					<li>White Rice</li>
+				</ul>
+			</div>
+		</Section>
+		<Section title="Dessert">
+			<div class="space-y-4">
+				<ul>
+					<li class="mb-1">Wedding Cake</li>
+					<li class="text-sm text-stone-400">Layers from top to bottom: oreo & pudding, peach, and fruit medley.</li>
+				</ul>
+				<ul>
+					<li>Fruit Tart</li>
+				</ul>
+			</div>
+		</Section>
+		<Section title="Tables">
+			<div class="space-y-4">
+				<a href="/wedding/reception.png">
+					<img src="/wedding/reception.png" />
+				</a>
+				<div class="grid grid-cols-2 gap-x-6 gap-y-4">
+					<ul>
+						<li class="font-bold uppercase mb-1 tracking-wider text-sm">Table 1</li>
+						<li>Andy Zhang</li>
+						<li>Anna Su</li>
+						<li>Alex Chen</li>
+						<li>Mari Takino</li>
+						<li>Tiffany Hsu</li>
+						<li>Kevin Jung</li>
+						<li>Sihua Xu</li>
+						<li>Dana Lee</li>
+					</ul>
+					<ul>
+						<li class="font-bold uppercase mb-1 tracking-wider text-sm">Table 2</li>
+						<li>Stephen Yuan</li>
+						<li>Josephine Liu</li>
+						<li>Eric McShane</li>
+						<li>Jingyi Li</li>
+						<li>George Liang</li>
+						<li>Jenn Leung</li>
+						<li>Aki Gao</li>
+						<li>Kevin Tong</li>
+						<li>Richard Wan</li>
+						<li>Christina Ju Lee</li>
+					</ul>
+					<ul>
+						<li class="font-bold uppercase mb-1 tracking-wider text-sm">Table 3</li>
+						<li>Charles Jin</li>
+						<li>Doris Lin</li>
+						<li>David Chi</li>
+						<li>Charlotte Yu</li>
+						<li>Pranav Maddi</li>
+						<li>Angelica Perez</li>
+						<li>Rebecca Su</li>
+					</ul>
+					<ul>
+						<li class="font-bold uppercase mb-1 tracking-wider text-sm">Table 4</li>
+						<li>Mei Rong</li>
+						<li>Feng Qian</li>
+						<li>Grace Qian</li>
+						<li>Ben Wang</li>
+						<li>Michelle Park</li>
+						<li>Jesse Liu</li>
+						<li>Xiyue Zheng</li>
+						<li>Chao Wang</li>
+						<li>Rui Hu</li>
+					</ul>
+					<ul>
+						<li class="font-bold uppercase mb-1 tracking-wider text-sm">Table 5</li>
+						<li>Zhixuan Shao</li>
+						<li>Xi Yang</li>
+						<li>Tianke Li</li>
+						<li>Biying Zhang</li>
+						<li>Wei Du</li>
+						<li>Yutang Zhang</li>
+						<li>Xuezhen Li</li>
+						<li>Xiancheng Lin</li>
+						<li>Yuxuan Zhang</li>
+						<li>Meng Ding</li>
+					</ul>
+					<ul>
+						<li class="font-bold uppercase mb-1 tracking-wider text-sm">Table 6</li>
+						<li>Nathan Deng</li>
+						<li>Joanna Zhang</li>
+						<li>Yiding Zhao</li>
+						<li>Yishan Qin</li>
+						<li>Trisha Sanghvi</li>
+						<li>Jieun Park</li>
+						<li>Shaojie Xu</li>
+						<li>Siqi You</li>
+						<li>Yuqing Qiu</li>
+					</ul>
+				</div>
+			</div>
+		</Section>
+	</div>
 </Layout>
